@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG AMIGO</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ceef;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            background-color: rgb(43, 173, 158);
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .navitem {
+            display: inline;
+            padding: 15px;
+        }
+
+        .navitem a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+       footer{
+        text-align: center;
+        padding: 2px;
+       }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome To PG Amigo Employee Portal</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#section-01">Employee Registration</a></li>
+                <li class="navitem"><a href="#section-02">Directory</a></li>
+                <li class="navitem"><a href="#section-03">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="image01.png" width="100%" alt="Employee Registration">
+    <section id="section-01" name="section">
+        <h2>Employee Registration</h2>
+        <caption>Fill the below form to register as employee</caption><br><br>
+        <form action="/submit" method="post">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required><br><br>
+            <label for="dob">D.O.B:</label>
+            <input type="date" name="dob" required><br><br>
+            <label for="role">Role:</label>
+            <select name="role" id="role">
+                <option value="Software developer">Software developer</option>
+                <option value="Full stack developer">Full stack developer</option>
+                <option value="Frontend developer">Frontend developer</option>
+                <option value="Backend developer">Backend developer</option>
+            </select><br><br>
+            <input type="submit" value="submit">
+            <br><br>
+        </form>
+    </section>
+    <section id="section-02" name="section">
+        <h2>Directory</h2>
+        <table border="1">
+            <caption>List of all registered employees. <br><br></caption>
+
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Employee Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2301510</td>
+                    <td>Rahul Jaiswal</td>
+                    <td>Software developer</td>
+                </tr>
+                <tr>
+                    <td>2301512</td>
+                    <td>Rounit Kumar</td>
+                    <td>Full stack developer</td>
+                </tr>
+                <tr>
+                    <td>2301527</td>
+                    <td>Wheel Sahil </td>
+                    <td>Frontend developer</td>
+                </tr>
+                <tr>
+                    <td>2301598</td>
+                    <td>Neeraj Kumar</td>
+                    <td>Backend developer</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="section-03" name="section">
+        <h2>Contact Us</h2>
+        <p>You can contact us at <a href="https://www.pgamigo.com">www.pgamigo.com</a> or visit us between 9AM-6PM</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.276387752403!2d78.0024653746963!3d27.210470976470937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974777bc6baffd3%3A0xbafa1b14ff7d2b60!2sBhagwan%20Talkies!5e0!3m2!1sen!2sin!4v1717868531505!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; RAHUL JAISWAL.ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
